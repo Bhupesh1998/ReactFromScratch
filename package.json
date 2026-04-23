@@ -1,0 +1,29 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Learning React in Depth",
+  "homepage": "https://github.com/Bhupesh1998/ReactFromScratch#readme",
+  "bugs": {
+    "url": "https://github.com/Bhupesh1998/ReactFromScratch/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhupesh1998/ReactFromScratch.git"
+  },
+  "license": "ISC",
+  "author": "Bhupesh",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "buid": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-router": "^7.14.2"
+  }
+}
