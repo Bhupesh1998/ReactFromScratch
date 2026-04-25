@@ -69,7 +69,7 @@ export const SwiggyResData = {
                 infoWithStyle: {
                   restaurants: [
                     {
-                      info: {
+                      card: {
                         id: "123456",
                         name: "Pizza Paradise",
                         cloudinaryImageId:
@@ -94,7 +94,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "234567",
                         name: "Burger Hub",
                         cloudinaryImageId:
@@ -119,7 +119,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "345678",
                         name: "Green Bites",
                         cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
@@ -143,7 +143,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "456789",
                         name: "Spice Kingdom",
                         cloudinaryImageId:
@@ -168,7 +168,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "567890",
                         name: "Chinese Dragon",
                         cloudinaryImageId:
@@ -193,7 +193,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "678901",
                         name: "Dessert Delight",
                         cloudinaryImageId:
@@ -218,7 +218,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "789012",
                         name: "Sushi Station",
                         cloudinaryImageId:
@@ -243,7 +243,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "890123",
                         name: "South Spice",
                         cloudinaryImageId:
@@ -268,7 +268,7 @@ export const SwiggyResData = {
                       },
                     },
                     {
-                      info: {
+                      card: {
                         id: "901234",
                         name: "Pasta Palace",
                         cloudinaryImageId:
