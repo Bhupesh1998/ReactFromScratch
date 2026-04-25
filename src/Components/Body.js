@@ -1,5 +1,6 @@
 import RestourantCard from "./RestourantCard";
 import { SwiggyResData } from "../../utils/mockData";
+import Footer from "./Footer";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
@@ -81,6 +82,7 @@ const Body = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -2,21 +2,46 @@ import { createRoot } from "react-dom/client";
 import Header from "./src/Components/Header.js";
 import Body from "./src/Components/Body.js";
 import Footer from "./src/Components/Footer.js";
-
+import Contact from "./src/Components/Contact.js";
+import About from "./src/Components/About.js";
+import Error from "./src/Components/Error.js";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 
 const MainApp = () => {
   return (
     <>
       <Header />
-      <Body />
-      <Footer />
+      <Outlet />
     </>
   );
 };
 
+const routers = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainApp />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/About",
+        element: <About />,
+      },
+    ],
+    errorElement: <Error />,
+  },
+]);
+
 const getRoot = document.getElementById("root");
 const createroot = createRoot(getRoot);
-createroot.render(<MainApp />);
+createroot.render(<RouterProvider router={routers} />);
+// createroot.render(<MainApp />);
 
 // Headers
 //   Logo, Links
