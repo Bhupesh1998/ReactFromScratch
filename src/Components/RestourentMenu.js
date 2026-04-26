@@ -1,23 +1,9 @@
-import { useEffect, useState } from "react";
-import { MenuMockData } from "../../utils/mockData";
 import { useParams } from "react-router";
+import useGetDataInfo from "../../utils/useGetDataInfo";
 
 const RestaurantMenu = () => {
   const { menuId } = useParams();
-
-  const [data, setData] = useState(null);
-  const getMenuAPI = async () => {
-    const getData = await fetch(
-      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.52110&lng=73.85020&restaurantId=" +
-        menuId,
-    );
-  };
-
-  useEffect(() => {
-    getMenuAPI();
-    const Datas = MenuMockData;
-    setData(Datas);
-  }, []);
+  const data = useGetDataInfo(menuId);
 
   if (data == null) {
     return <h1>Loading...</h1>;
@@ -33,7 +19,7 @@ const RestaurantMenu = () => {
     <div>
       <h1>Name : {name}</h1>
       <h1>City and Locality : {locality}</h1>
-      <h1>COnst for Two : {costForTwo / 100} Rs.</h1>
+      <h1>Const for Two : {costForTwo}</h1>
       <h1>cuisines : {cuisines.join(", ")}</h1>
       <div>
         <hr />
