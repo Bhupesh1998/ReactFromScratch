@@ -3,6 +3,7 @@ import { SwiggyResData } from "../../utils/mockData";
 import Footer from "./Footer";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router";
 
 const Body = () => {
   const [datas, setData] = useState([]);
@@ -78,7 +79,9 @@ const Body = () => {
       <div className="bg-amber-200 p-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filterData.map((data, index) => (
-            <RestourantCard item={data} key={index} />
+            <Link to={`/RestaurantMenu/${data.id}`} key={data.id}>
+              <RestourantCard item={data} />
+            </Link>
           ))}
         </div>
       </div>
